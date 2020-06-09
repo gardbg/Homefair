@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    
+   }
+
+   body {
+    font-family: 'roboto', sans-serif;
+    
+}
+
+.fullscreenImage .mainpage-image {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    
+}
+
+.boligselgertjenesten img {
+    display: block;
+    margin: 0 auto;
+}
+
+.boligselgertjenesten h2 {
+    text-align: center;
+}
+
+.boligselgertjenesten .grid .grid__item h2,h3 {
+    text-align: center;
+}
+
+.button-boligselger {
+    align-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.button-boligselger .btn-search {
+    height: 100%;
+	width: 45%;
+	background:#557A95;
+	white-space: nowrap;
+	border-radius: .5px;
+	font-size: 20px;
+	color: #fff;
+	transition: all .2s ease-out, color .2s ease-out;
+	border: 0;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.button-boligselger .btn-search:hover {
+    color: black !important;
+	background-color: #557A95;
+	border: 1px solid black;
+	border-color: black !important;
+	transition: all 0.4s ease 0s;
+	opacity: 0.7;
+	text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .fullscreenImage .mainpage-image{
+        width: 100%;
+        height: auto;
+    }
+  }

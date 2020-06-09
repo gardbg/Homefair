@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.3.4/css/jquery.mmenu.all.min.css'>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--navbar start-->
+    <section class="[ navigation ]">
+        <div class="[ nav-container ]">
+          <div class="[ brand ]">
+            <img src="images/favicon.ico">
+            <a href="#!">HomeFair</a>
+          </div>
+          <nav>
+            <div class="[ nav-mobile ]">
+              <a id="nav-toggle" href="#!"><span></span></a>
+            </div>
+            <ul class="[ nav-list ]">
+              
+              <li><a href="index.html">Hjem</a></li>
+              <li><a href="#!">Prisestimater</a></li>
+              <!--<li><a href="aboutus.html">Om oss</a>-->
+                <!--<ul class="[ nav-dropdown ]">
+                  <li><a href="#!">Web Design</a></li>
+                  <li><a href="#!">Web Development</a></li>
+                  <li><a href="#!">Graphic Design</a></li>
+                </ul>-->
+              </li>
+              
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <!--Navbar end-->
+
+
+      <!--Fullscreen image start-->
+      
+      <div class="[ fullscreenImage ]">
+        
+        <img src="images/selg1_søk.jpg" class="mainpage-image">
+        <div class="[ image-text ]">
+          <br><br>
+            <h2 class="[ search-header__h2 ]">Skal du selge bolig?</h2>
+            <br>
+            <p class="[ search-text__p ]">Vi anvender kunstig intelligens til å finne meglerne som sikrer deg høyeste markedspris for 
+              din bolig. Hvis du vil vite hva din eiendom er verdt og/eller finne de beste eiendomsmeglerne, kan du søke nedenfor.
+
+            </p>
+            <div class="s01">
+                <form>
+                  
+                  <div class="inner-form">
+                    <div class="input-field first-wrap">
+                      <input id="search" type="text" placeholder="Din adresse.." />
+                    </div>
+                    
+                    <div class="input-field third-wrap">
+                      <button class="btn-search modal-toggle" type="button">Søk</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            
+            
+         
+
+            
+        
+        
+          
+                
+                </div>
+
+           
+                  <div class="container">
+                  <div class="modal">
+                    <div class="modal-overlay modal-toggle"></div>
+                    <div class="modal-wrapper modal-transition">
+                      <div class="modal-header">
+                        <h2 class="modal-heading">Vennligst fyll ut følgende</h2>
+                      </div>
+                      
+                      <div class="modal-body">
+                        <div class="modal-content">
+                          <h3>Primærrom (P-rom)</h3>
+                          <p>Primærrom gir et litt mer treffsikkert estimat enn bruksareal og er derfor ønskelig å anvdende.</p>
+                          <input type="number" class="input-prrom"><br>
+                          <br>
+                          <h3>Har du følgende?</h3>
+                          <p>Avhengig av datatilgjengelighet, vil informasjonen muligvis bli brukt til å gi deg et mer treffsikkert estimat</p>
+                          <br>
+                          <div class="image-modals">
+                              <div class="grid">
+                                  <div class="grid__item grid__item--md-span-6">
+                                    <p>Garasje/parkeringsplass</p>
+                                    <a href="#!"><img src="illustrasjoner/Garasj.svg"></a> 
+                                    
+                                    <form>
+                                        <input type="checkbox" id="option1">
+                                        <label for="option1">Velg</label>
+                                        </form>
+                                  </div>
+                                    <div class="grid__item grid__item--md-span-6">
+                                      <p>Balkong</p>
+                                     <a href="#!"><img src="illustrasjoner/Balkong.svg"></a>
+                                     <form>
+                                        <input type="checkbox" id="option2">
+                                        <label for="option2">Velg</label>
+                                        </form> 
+                                      </div>
+                              </div>
+                              
+                              
+                          </div>
+                          <br>
+                          <h3>Har du oppusset følgende siden du kjøpte bolig?</h3>
+                                <p>Effekten av oppussing er vanligvis merkbar men avhenger blandt annet av boligtype og lokalitet.
+                                  Velg nedenfor for et mere treffsikkert estimat.
+                                </p>
+                                <br>
+                          <div class="image-modals">
+                              <div class="grid">
+                                
+                                
+                                  <div class="grid__item grid__item--md-span-6">
+                                    <p>Bad/Toalett</p>
+                                    <a href="#!"><img src="illustrasjoner/Bad.svg"></a>
+                                    <form>
+                                        <input type="checkbox" id="option3">
+                                        <label for="option3">Velg</label>
+                                        </form>
+                                    </div>
+                                    <div class="grid__item grid__item--md-span-6">
+                                      <p>Kjøkken</p>
+                                     <a href="#!"><img src="illustrasjoner/Kjøkken.svg"></a> 
+                                     <form>
+                                        <input type="checkbox" id="option4">
+                                        <label for="option4">Velg</label>
+                                        </form>  
+                                    </div>
+                              </div>
+                          </div>
+                          
+                          <br>
+                          <div class="grid button-grid">
+                            <div class="grid__item grid__item--md-span-12">
+                         <a href="resultpage.html"><button type="submit" class="btn-search">Søk</button></a>
+                        </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        </div>
+
+        <!--Searchbar mobile start-->
+
+        <div class="searchbar-mobile">
+            <h2 class="[ search-header__h2-mobile ]">Skal du selge bolig?</h2>
+            <br>
+            <p class="[ search-text__p-mobile ]">Vi anvender kunstig intelligens til å finne meglerne som sikrer deg høyeste markedspris for 
+              din bolig.
+            </p>  
+          <div class="s01">
+              
+                <form>
+                  
+                  <div class="inner-form">
+                    <div class="input-field first-wrap">
+                      <input id="search" type="text" placeholder="Din adresse.." />
+                    </div>
+                    
+                    <div class="input-field third-wrap">
+                      <button class="btn-search modal-toggle" type="button">Søk</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+        </div>
+
+        <!--searchbar mobile end-->
+
+
+       <br><br>
+
+      <!--Fullscreen image end-->
+
+<div class="container">
+      <div class="boligselgertjenesten">
+        <h2>Hvordan fungerer boligselgertjenesten?</h2>
+        <br>
+        <div class="grid">
+          <div class="grid__item--md-span-4">
+            <img src="illustrasjoner/søk_selg1.svg">
+            <br>
+            <h3>SØK</h3>
+            <br>
+            <p>Du søker på din adresse og vår modell lager et prisestimat på din bolig og vurderer hva hver enkel
+              eiendomsmegler, som operer i ditt område, vil kunne selge din bolig for. Vi bruker flere hundrede variabler
+              samt salgshistorikken til eiendomsmeglerne som grunnlag for vår intelligente løsning.
+            </p>
+          </div>
+
+          <div class="grid__item--md-span-4">
+              <img src="illustrasjoner/hva_tjener_du.svg">
+              <br>
+              <h3>HVA TJENER DU?</h3>
+              <br>
+              <p>Du får et gratis prisestimatm og du blir opplyst om forskjellen i forventet salgspris om du bruker en høytpresterende
+                megler sammenlignet med en lavtpresterende megler, altså hvor mye du potensielt sett kan spare på riktig
+                megler for nettop din bolig.
+              </p>
+            </div>
+
+            <div class="grid__item--md-span-4">
+                <img src="illustrasjoner/få_tilgang.svg">
+                <br>
+                <h3>KJØP OG FÅ TILGANG</h3>
+                <br>
+                <p>Deretter får du tilgang til listen over de 5 beste meglerne
+                    slik at du vet hvem som, statistisk sett, vil kunne selge din bolig til høyest pris.
+                    Du får også tilgang til annen viktig innsikt om ditt boligsalg og meglernes historikk.
+                    
+                </p>
+              </div>
+
+        </div>
+      </div>
+      <br>
+      <div class="button-boligselger">
+          <button class="btn-search" type="button">Les mer</button>
+
+      </div>
+    </div>
+
+
+      <!--Newsletter start-->
+      <div class="newsletter">
+      <div id="container-newsletter">
+          <h2>Nyhetsbrev</h2>
+          <p>Meld deg på vårt nyhetsbrev og bli informert når vi lanserer nye tjenester eller lanserer våre tjenester i nye områder.</p>
+          <form>
+            <input type="email" placeholder="Din epost.." required>
+              <br>
+              <button class="btn-search" type="button">Les mer</button>
+          </form>
+        </div>
+      </div>
+
+
+
+
+      <!--Newsletter end-->
+
+
+
+
+<!--footer start-->
+      
+                  
+        
+        <footer>
+          <div class="container">
+          <div class="grid">
+            <div class="grid__item grid__item--md-span-4">
+              <h3>Om oss</h3>
+              <br>
+              <p>HomeFair AS leverer tjenester basert på kunstig intelligens og avansert analyse til bedrifter og det private boligmarkedet. Hjemmesiden ble lansert fordi vi ønsker å øke markedstransparensen, slik at boligselgere og kjøpere står sterkere og mer informerte i deres møte med andre aktører som opererer i markedet.</p>
+
+            </div>
+
+            <div class="grid__item grid__item--md-span-4">
+              <h3>Vi er uavhengige</h3>
+              <br>
+              <p>Vi er en av få aktører som er helt uavhengige og kan derfor tilby deg tjenestene vi leverer uten at vi benytter din data til andre formål og uten at vi selger din data videre til tredjepart. Veldig få aktører på det norske boligmarkedet kan skryte av en slik garanti.
+                </p>
+              </div>
+
+              <div class="grid__item grid__item--md-span-4">
+                <h3>Sosiale medier</h3>
+                <br>
+                <div class="icons-footer">
+                  <a href="#!"><img src="https://img.icons8.com/clouds/50/000000/facebook-new.png"></a>
+                  <a href="#!"><img src="https://img.icons8.com/clouds/50/000000/twitter.png"></a>
+                  <a href="#!"><img src="https://img.icons8.com/clouds/50/000000/instagram-new.png"></a>
+                  <a href="#!"><img src="https://img.icons8.com/clouds/50/000000/linkedin.png"></a>
+                </div>
+                </div>
+
+          </div>
+        </div>
+        </footer>
+ 
+
+
+
+
+    <script src="JS/jquery-3.3.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

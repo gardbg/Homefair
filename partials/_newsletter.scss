@@ -1,0 +1,90 @@
+.newsletter {
+    /* 	background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%); */
+        background: url('images/selg3.jpg');
+        background-attachment: fixed;
+        background-size:cover;
+        margin: 0;
+    }
+    
+    
+    #container-newsletter{
+        
+        
+        text-align: center;
+        border-radius: 5px;
+        margin: 3em auto;
+        background: rgba(255, 255, 255, 0.95);
+        height: 400px;
+        width: 480px;
+        padding: 1em;
+        
+        
+        
+    }
+    
+    #container-newsletter h2 {
+        background: url('images/selg3.jpg');
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size:cover;
+        letter-spacing: 2px;
+        font-size: 3.5em;
+        margin: 0;
+    
+        
+        
+    }
+    #container-newsletter p {
+        
+        margin: 3px 0 1.5em 0;
+        font-size: 1.3em;
+        color: #7d7d7d;
+    }
+    
+    #container-newsletter input {
+    
+        width: 210px;
+        display: inline-block;
+        text-align: center;
+        border-radius: 7px;
+        background: #eee;
+        padding: 1em 2em;
+        outline: none;
+        border: none;
+        color: #222;
+        transition: 0.3s linear;
+    }
+    ::placeholder{color: #999;}
+    #container-newsletter input:focus {background:#557A95;}
+    
+    #container-newsletter button {
+        margin-top: 30px;
+        height: 100%;
+	width: 25%;
+	background:#557A95;
+	white-space: nowrap;
+	border-radius: .5px;
+	font-size: 20px;
+	color: #fff;
+	transition: all .2s ease-out, color .2s ease-out;
+	border: 0;
+    cursor: pointer;
+    padding: 15px;
+    
+    }
+    #container-newsletter button:hover{transform: translatey(2px);}
+    #container-newsletter button:active{transform: translatey(5px);}
+
+
+    @media screen and (max-width: 767px) {
+        #container-newsletter {
+            width: 100%;
+        }
+
+        #container-newsletter button {
+            width: 50%;
+        }
+
+    }

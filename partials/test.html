@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+        <button class="btn-search modal-toggle" type="button">Søk</button>
+
+    <style>
+         .modal {
+    position: absolute;
+    z-index: 10000; /* 1 */
+    top: 5vh;
+    left: 0;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.modal.is-visible {
+    visibility: visible;
+}
+
+.modal-overlay {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: hsla(0, 0%, 0%, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 0.3s, opacity 0.3s;
+}
+
+.modal.is-visible .modal-overlay {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
+}
+
+.modal-wrapper {
+  position: absolute;
+  z-index: 9999;
+  top: 6em;
+  left: 50%;
+  width: 32em;
+  margin-left: -16em;
+  background-color: #fff;
+  box-shadow: 0 0 1.5em hsla(0, 0%, 0%, 0.35);
+}
+
+.modal-transition {
+  transition: all 0.3s 0.12s;
+  transform: translateY(-10%);
+  opacity: 0;
+}
+
+.modal.is-visible .modal-transition {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.modal-header,
+.modal-content {
+  padding: 1em;
+}
+
+.modal-header {
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.06);
+  border-bottom: 1px solid #e8e8e8;
+}
+
+
+.modal-heading {
+  font-size: 1.125em;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.modal-content > *:first-child {
+  margin-top: 0;
+}
+
+.modal-content > *:last-child {
+  margin-bottom: 0;
+}
+
+.modal-content .btn-search {
+	height: 100%;
+	width: 100%;
+	background: #557A95;
+	white-space: nowrap;
+	border-radius: .5px;
+	font-size: 30px;
+	color: #fff;
+	transition: all .2s ease-out, color .2s ease-out;
+	border: 0;
+	cursor: pointer;
+	
+}
+
+.modal-content .btn-search:hover {
+	color: black !important;
+	background-color: #557A95;
+	border: 1px solid black;
+	border-color: black !important;
+	transition: all 0.4s ease 0s;
+	opacity: 0.7;
+	text-decoration: underline;
+}
+
+.button-grid .btn-search {
+	text-align: center;
+	margin: 0 auto;
+}
+
+
+
+.image-modals img {
+	margin: 20px;
+	display: block;
+    margin: 0 auto;
+ 
+  
+}
+
+
+.input-prrom {
+	width: 100%;
+	height: 30px;
+	border: 1px solid #557A95;
+}
+
+
+.image-modals h1,h2,h3,h4,h5,p {
+	line-height: 1.5;
+}
+
+.image-modals .grid__item img {
+	transform-origin: 50% 65%;
+  transition: transform 5s, filter 3s ease-in-out;
+  filter: brightness(150%);
+}
+
+.image-modals .grid__item:hover img {
+	filter: brightness(100%);
+	transform: scale(1.5);
+	cursor: pointer;
+	
+
+}
+        
+        </style>
+
+
+        <div class="container">
+                <div class="modal">
+                  <div class="modal-overlay modal-toggle"></div>
+                  <div class="modal-wrapper modal-transition">
+                    <div class="modal-header">
+                      <h2 class="modal-heading">Vennligst fyll ut følgende</h2>
+                    </div>
+                    
+                    <div class="modal-body">
+                      <div class="modal-content">
+                        <h3>Primærrom (P-rom)</h3>
+                        <p>Primærrom gir et litt mer treffsikkert estimat enn bruksareal og er derfor ønskelig å anvdende.</p>
+                        <input type="number" class="input-prrom"><br>
+                        <br>
+                        <h3>Har du følgende?</h3>
+                        <p>Avhengig av datatilgjengelighet, vil informasjonen muligvis bli brukt til å gi deg et mer treffsikkert estimat</p>
+                        <br>
+                        <div class="image-modals">
+                            <div class="grid">
+                                <div class="grid__item grid__item--md-span-6">
+                                  <p>Garasje/parkeringsplass</p>
+                                  <a href="!#"><img src="illustrasjoner/Garasj.svg"></a> 
+                                  
+                                  <form>
+                                      <input type="checkbox" id="option1">
+                                      <label for="option1">Velg</label>
+                                      </form>
+                                </div>
+                                  <div class="grid__item grid__item--md-span-6">
+                                    <p>Balkong</p>
+                                   <a href="!#"><img src="illustrasjoner/Balkong.svg"></a>
+                                   <form>
+                                      <input type="checkbox" id="option2">
+                                      <label for="option2">Velg</label>
+                                      </form> 
+                                    </div>
+                            </div>
+                            
+                            
+                        </div>
+                        <br>
+                        <h3>Har du oppusset følgende siden du kjøpte bolig?</h3>
+                              <p>Effekten av oppussing er vanligvis merkbar men avhenger blandt annet av boligtype og lokalitet.
+                                Velg nedenfor for et mere treffsikkert estimat.
+                              </p>
+                              <br>
+                        <div class="image-modals">
+                            <div class="grid">
+                              
+                              
+                                <div class="grid__item grid__item--md-span-6">
+                                  <p>Bad/Toalett</p>
+                                  <a href="!#"><img src="illustrasjoner/Bad.svg"></a>
+                                  <form>
+                                      <input type="checkbox" id="option3">
+                                      <label for="option3">Velg</label>
+                                      </form>
+                                  </div>
+                                  <div class="grid__item grid__item--md-span-6">
+                                    <p>Kjøkken</p>
+                                   <a href="!#"><img src="illustrasjoner/Kjøkken.svg"></a> 
+                                   <form>
+                                      <input type="checkbox" id="option4">
+                                      <label for="option4">Velg</label>
+                                      </form>  
+                                  </div>
+                            </div>
+                        </div>
+                        
+                        <br>
+                        <div class="grid button-grid">
+                          <div class="grid__item grid__item--md-span-12">
+                       <a href="resultpage.html"><button type="submit" class="btn-search">Søk</button></a>
+                      </div>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      </div>
+
+
+
+    
+</body>
+</html>

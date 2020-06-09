@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19.2" height="38.707" viewBox="0 0 19.2 38.707">
+  <g id="scroll_down" data-name="scroll down" transform="translate(-1118 -1112)">
+    <g id="Rectangle_695" data-name="Rectangle 695" transform="translate(1118 1112)" fill="none" stroke="#f1ece8" stroke-width="1">
+      <rect width="19.2" height="30" rx="9.6" stroke="none"/>
+      <rect x="0.5" y="0.5" width="18.2" height="29" rx="9.1" fill="none"/>
+    </g>
+    <g id="Rectangle_696" data-name="Rectangle 696" transform="translate(1124.6 1116)" fill="none" stroke="#f1ece8" stroke-width="1">
+      <rect width="6" height="6" rx="3" stroke="none"/>
+      <rect x="0.5" y="0.5" width="5" height="5" rx="2.5" fill="none"/>
+    </g>
+    <line id="Line_7" data-name="Line 7" x2="4" y2="4" transform="translate(1123.567 1146)" fill="none" stroke="#f1ece8" stroke-linecap="round" stroke-width="1"/>
+    <line id="Line_8" data-name="Line 8" x1="4" y2="4" transform="translate(1127.633 1146)" fill="none" stroke="#f1ece8" stroke-linecap="round" stroke-width="1"/>
+  </g>
+</svg>

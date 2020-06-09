@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="24" height="24" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Icon_Subtract_Filled" data-name="Icon / Subtract / Filled" clip-path="url(#clip-path)">
+    <rect id="Box" width="24" height="24" fill="none"/>
+    <rect id="Rectangle_392" data-name="Rectangle 392" width="2" height="14" transform="translate(19 11) rotate(90)" fill="#283fff"/>
+  </g>
+</svg>

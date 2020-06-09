@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+  <g id="clock" transform="translate(0 0)">
+    <path id="Path_2009" data-name="Path 2009" d="M25.389,2A23.412,23.412,0,1,0,48.825,25.412,23.4,23.4,0,0,0,25.389,2Zm.023,42.142a18.73,18.73,0,1,1,18.73-18.73A18.725,18.725,0,0,1,25.412,44.142Z" transform="translate(2.588 4)" fill="#283fff"/>
+    <path id="Path_2010" data-name="Path 2010" d="M0,0H56V56H0Z" fill="none"/>
+    <path id="Path_2011" data-name="Path 2011" d="M14.441,7H11V20.763l12.043,7.226,1.72-2.821L14.441,19.043Z" transform="translate(14.811 9.504)" fill="#283fff"/>
+  </g>
+</svg>
